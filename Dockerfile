@@ -3,7 +3,7 @@ FROM centos:7
 RUN yum -y install epel-release
 RUN yum -y install -y openssh-clients git rsync
 RUN yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
-RUN YUM -y install git
+RUN yum -y install git
 RUN yum-config-manager --enable remi-php72
 RUN yum -y install composer \
   php-cli \
